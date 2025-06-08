@@ -1,5 +1,5 @@
 # Lernprogramm
-Dieser Beleg ist ein Webbasiertes Lernprogramm, mit dem Quizfragen aus verschiedenen Kategorien (Webprogrammierung, Allgemeinwissen, Mathe (und Notenlernen)) gelöst werden können. Da das Programm als PWA umgesetzt wurde und sich mittels responsive Design an z.B. Handybildschirme anpasst, kann es auch heruntergeladen und offline auf dem Handy genutzt werden.
+Dieser Beleg ist ein Webbasiertes Lernprogramm, mit dem Quizfragen aus verschiedenen Kategorien (Webprogrammierung, Allgemeinwissen, Mathe (und Notenlernen)) gelöst werden können. Da das Programm als PWA umgesetzt wurde kann die Seite auch als App installiert werden.
 
 ## Erfüllte Aufgaben
 - es gibt drei lokal gespeicherte Aufgabenkategorien (Webprogrammierung, Mathe und Notenlernen)
