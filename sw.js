@@ -38,12 +38,6 @@ self.addEventListener('install', event =>
     )
 );
 
-self.addEventListener('fetch', event => event.respondWith(
-    caches.open(cache_name)
-        .then(cache => cache.match(event.request))
-        .then(response => response || fetch(event.request))
-));
-
 self.addEventListener('fetch', event => {
     if(event.request.url.startsWith("./tasks.json")){
         event.respondWith(fromNetwork(event.request, 5000).catch(() => fromCache(event.request)));
