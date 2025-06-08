@@ -1,0 +1,15 @@
+{
+    "short_name": "lernen",
+    "name": "Lernprogramm",
+    "icons": [
+        {
+            "src": "./L-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

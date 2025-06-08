@@ -1,0 +1,38 @@
+{
+    "mathe": [
+        {"a":"$x^2+x^2=$", "l":["$2x^2$","$x^4$","$x^8$","$2x^4$"]},
+        {"a":"$x^2\\cdot x^2=$", "l":["$x^4$","$x^2$","$2x^2$","$4x$"]},
+        {"a":"$\\sqrt{16}=$","l":["$4$","$2$","$3$","$5$"]},
+        {"a":"Was ist die Ableitung von $f(x)=2+x^2$?","l":["$2x$","$x$","$2x^2$","$x^3$"]},
+        {"a":"Wie lautet die allgemeine Form einer quadratischen Gleichung?","l":["$y=ax^2+bx+c$","$y=mx+b$","$y=ax^3+bx^2+cx+d$","$y=ax+b$"]},
+        {"a":"Wie lautet die Binomialformel für $(a+b)^n$?","l":["$\\sum_{k=0}^n\\binom{n}{k}a^{n-k}b^k$","$a^n+b^n$","$\\frac{n!}{(n-k)! k!}$","$(a+b)^{n-1}+(a+b)$"]},
+        {"a":"Was ist das unbestimmte Integral von $f(x)=3x^2$?","l":["$x^3+C$","$3x^3+C$","$x^2+C$","$\\frac{1}{3}x^3+C$"]},
+        {"a":"Was ist der Sinus von $90\\degree$?","l":["$1$","$0$","$\\frac{1}{2}$","$\\frac{\\sqrt{2}}{2}$"]},
+        {"a":"Wie lautet die Determinante einer $2\\times2$ Matrix $\\begin{pmatrix}a & b \\\\c & d\\end{pmatrix}$?","l":["$ad-bc$","$ab-cd$","$a+b+c+d$","$ab+cd$"]},
+        {"a":"Wie lautet die Eulersche Identität?","l":["$e^{i\\pi}+1=0$","$e^{i\\pi}-1=0$","$\\pi e^{i}+1=0$","$e^{i}+\\pi=0$"]},
+        {"a":"Was ist der Grenzwert von $\\frac{1}{x}$ ,wenn $x$ gegen $\\infty$ strebt?","l":["$0$","$1$","$\\infty$","$-1$"]},
+        {"a":"Was ist $\\log_b(b^x)$ ?","l":["$x$","$1$","$0$","$b^x$"]},
+        {"a":"Was ist die konjugierte Zahl von $a+bi$ ?","l":["$a-bi$","$a+bi$","$-a-bi$","$bi-a$"]},
+        {"a":"Was ist die Ableitung von $f(y) = 2 + x^2$ ?","l":["$0$","$2x$","$x$","$2x^2$"]}
+    ],
+    "web": [
+        {"a":"Welche Authentifizierung bietet HTTP", "l":["Digest Access Authentication","OTP","OAuth","2-Faktor-Authentifizierung"]},
+        {"a":"Welches Transportprotokoll eignet sich für zeitkritische Übertragungen", "l":["UDP","TCP","HTTP","Fast Retransmit"]},
+
+        {"a":"Welches Protokoll verwendet HTTP?","l":["TCP","UDP","ICMP","FTP"]},
+        {"a":"Welcher Port wird für HTTPS verwendet?","l":["443","80","21","22"]},
+        {"a":"Was bedeutet HTML?","l":["HyperText Markup Language","Hyper Transfer Protocol","HighText Markup Language","HyperText Markup Link"]},
+        {"a":"Welche Methode wird nicht in HTTP verwendet?","l":["SEND","GET","POST","DELETE"]},
+        {"a":"Was ist eine IP-Adresse?","l":["Eindeutige Adresse eines Geräts im Netzwerk","Physische Adresse eines Computers","Netzwerkprotokoll","Portnummer"]},
+        {"a":"Welches Protokoll eignet sich am besten für Video-Streaming?","l":["UDP","TCP","SMTP","HTTP"]},
+        {"a":"Was ist ein Domain Name System (DNS)?","l":["System zur Namensauflösung","Netzwerkprotokoll","Webserver","Sicherheitsprotokoll"]},
+        {"a":"Was bedeutet URL?","l":["Uniform Resource Locator","Universal Resource Locator","Uniform Resource Link","Universal Resource Link"]},
+        {"a":"Welche Schicht des OSI-Modells ist für Routing verantwortlich?","l":["Netzwerkschicht","Transportschicht","Sitzungsschicht","Anwendungsschicht"]},
+        {"a":"Welche der folgenden ist eine gültige IPv6-Adresse?","l":["2001:0db8:85a3:0000:0000:8a2e:0370:7334","192.168.0.1","127.0.0.1","255.255.255.0"]}
+
+    ],
+    "noten": [
+        {"a":"C4", "l":["C","D","E","H"]},
+        {"a":"(C4 E4 G4)", "l": ["C", "H", "F", "D"]}
+    ]
+}

@@ -1,0 +1,199 @@
+:root {
+    --dark-background: #444444;
+    --dark-menu: #227777;
+    --dark-menu-hover: #429797;
+    --dark-menu-active: #328787;
+    --dark-button: #666666;
+    --dark-button-hover: #585858;
+    --dark-button-active: #555555;
+    --dark-aside: #555555;
+    --dark-text-color: white;
+
+    --light-background: #eeeeee;
+    --light-menu: #a0f022;
+    --light-menu-hover: #80d010;
+    --light-menu-active: #98e018;
+    --light-button: #a0a0a0;
+    --light-button-hover: #b0b0b0;
+    --light-button-active: #a8a8a8;
+    --light-aside: #d0d0d0;
+    --light-text-color: black;
+
+    --media-switch-width: 600px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--dark-background);
+    color: var(--dark-text-color);
+    width: 100%;
+    margin-left: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 0.25em;
+    border: 0;
+    margin: 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--dark-text-color);
+}
+
+button {
+    font-size: 1em;
+    color: var(--dark-text-color);
+}
+
+main > * {
+    border: 2px solid black;
+    margin: 0.25em;
+    /*border-radius: 1em;*/
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-menu);
+
+    order: 1;
+    flex: 0 0 8em;
+}
+nav p {order: 0; margin: 0; padding: 0.5em; padding-top: 0.5em; padding-bottom: 0.5em; border-bottom: 1px solid black;}
+#task-choice {
+    display: flex;
+    flex-direction: column;
+}
+#task-choice button {
+    text-align: left;
+    order: 0;
+    padding: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: var(--dark-menu);
+    border: 0px;
+    color: white;
+}
+#task-choice button:hover {background-color: var(--dark-menu-hover);}
+#task-choice button:active {background-color: var(--dark-menu-active);}
+
+#middle {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    flex: 6 6 0%;
+}
+#progress-bar-container {
+    align-items: left;
+    text-align: center;
+    width: auto;
+
+    padding: 0.5em;
+    /*border-bottom: 2px solid black;*/
+    margin: 0;
+    order: 1;
+}
+#progress-text {margin-bottom: 0.25em;}
+#progress-bar {height: 0.5em; width: 100%; border: 2px solid black;}
+#progress {height: 0.5em; background-color: #00aa00; width: 0%;}
+#question-container {
+    text-align: center;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    order: 2;
+}
+#question-container::first-line {font-weight: bold;}
+#question-container > * {
+    order: 1;
+}
+#statistic {
+    display: none;
+    text-align: left;
+
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    order: 2;
+}
+.katex-display{margin: 0 !important;}
+span{pointer-events: none;}
+
+aside {
+    background-color: var(--dark-aside);
+    order: 3;
+    flex: 0 0 8em;
+}
+aside div {
+    padding: 0.5em;
+    text-align: left;
+}
+
+#answer-buttons {
+    display: flex;
+}
+.answer-button {
+    background-color: var(--dark-button);
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    width: 25%;
+    padding: 0.5em;
+    border: 0px;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+.answer-button:hover {background-color: var(--dark-button-hover);}
+.answer-button:active {background-color: var(--dark-button-active);}
+
+#answer-button_1 {order: 1; flex: 1 1 0%;}
+#answer-button_2 {order: 2; flex: 1 1 0%;}
+#answer-button_3 {order: 3; flex: 1 1 0%;}
+#answer-button_4 {order: 4; flex: 1 1 0%;}
+
+#new-task-button {
+    width: 25%;
+    padding: 0.5em;
+    font-size: 1.1em;
+    border: 0;
+    background-color: var(--dark-menu);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#new-task-button:hover {background-color: var(--dark-menu-hover);}
+#new-task-button:active {background-color: var(--dark-menu-active);}
+
+#task {
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1000px) {
+    body {width: 100%; margin-bottom: 3em;}
+    main {flex-direction: column;}
+    nav {order: 1;}
+    aside {/*max-width: 100%; order: 2;*/ display: none;}
+    #question-container {order: 3; padding-left: 1em; padding-right: 1em;}
+    #statistic {text-align: left; padding-left: 1em; padding-right: 1em;}
+    #answer-buttons {flex-direction: column; align-items: stretch;}
+    .answer-button {order: 0; width: 100%;margin-left: 0; margin-right: 0; margin-top: 0.25em; margin-bottom: 0.25em;}
+    #new-task-button {width: 100%;margin-left: 22px; margin-right: 22px;}
+}
