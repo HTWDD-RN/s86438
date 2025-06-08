@@ -1,4 +1,4 @@
-const cache_name = "pwa_1";
+const cache_name = "pwa_2";
 const content_to_cache = [
     "Lernprogramm/",
     "Lernprogramm/index.html",
@@ -34,7 +34,7 @@ const content_to_cache = [
 
 self.addEventListener('install', event =>
     event.waitUntil(
-        caches.open(cache_name).then(cache => cache.addAll(files_to_cache))
+        caches.open(cache_name).then(cache => {return cache.addAll(files_to_cache)})
     )
 );
 
